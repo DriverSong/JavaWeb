@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function ChangeImage(img){
+			img.src = img.src + "?" + new Date().getTime();
+		}
+	</script>
+</head>
+<body>
+	<form action="">
+		用户名：<input type="text" name="username"><br/>
+		密码：<input type="password" name="password"><br/>
+		验证码：<input type="text" name="checkcode">
+		<img src="/day06/ResponseDemo4" onclick="ChangeImage(this)" alt="换一张" style="cursor:hand"><br/>
+		<input type="submit" value="注册">
+	</form>
+</body>
+</html>
